@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'lo que sea';
 
+  pelicula={
+    titulo: 'Spider-Man',
+    fechaLanzamiento: new Date()
+  }
   duplicarNumero(valor: number):number{
     return valor*2;
   }

@@ -8,9 +8,11 @@
 
 <div>El doble de 3 es {{duplicarNumero(3)}}</div>
 
-<h2>Datos de la pelicula</h2>
+<h2>Datos de las peliculas</h2>
 
-<div>Title: {{pelicula.titulo | lowercase}}</div>
-<div>Date: {{pelicula.fechaLanzamiento | date:"dd-MMMM-yyyy" | uppercase}}</div>
-<div>Price: {{pelicula.precio | currency}}</div>
+<div *ngFor="let pelicula of peliculas" class="pelicula-container">
+    <div>Title: {{pelicula.titulo | lowercase}}</div>
+    <div>Date: {{pelicula.fechaLanzamiento | date:"dd-MMMM-yyyy" | uppercase}}</div>
+    <div>Price: {{pelicula.precio | currency}}</div>
+</div>
 

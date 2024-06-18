@@ -6,10 +6,11 @@
 <!-- INTERPOLACION {{}} -->
 <div>La suma de 2 y 2 es {{2+2}}</div>
 
-<div>El doblee de 3 es {{duplicarNumero(3)}}</div>
+<div>El doble de 3 es {{duplicarNumero(3)}}</div>
 
 <h2>Datos de la pelicula</h2>
 
-<div>{{pelicula.titulo}}</div>
-<div>{{pelicula.fechaLanzamiento}}</div>
+<div>Title: {{pelicula.titulo | lowercase}}</div>
+<div>Date: {{pelicula.fechaLanzamiento | date:"dd-MMMM-yyyy" | uppercase}}</div>
+<div>Price: {{pelicula.precio | currency}}</div>
 
